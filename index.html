@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Imagens/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media-query.css" >
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Auto Master</title>
+</head>
+<body>
+
+    <header class="header-container">
+            <img src="Imagens/automaster2.png" alt="Logo_AutoMaster">
+            <nav class="menu" >
+                <a href="#princ-conteiner">Principal</a>
+                <a href="#produtos_conteiner">Produtos</a>
+                <a href="#servicos-conteiner">Serviços</a>
+                <a href="#tec-conteiner">Tecnologia</a>
+                <a href="#parc-conteiner">Parceiros</a>
+                <a href="#">Sistema de monitoramento 24H</a>
+            </nav>
+            <a href="#id05" class="btn"><span onclick="document.getElementById('id05').style.display='block'" style="width:auto;">Baixe nosso App</span><i></i></a>
+            <a href="#" class="btn"><span>Fale Conosco</span><i></i></a>
+
+    </header>
+        <div class="menu-mobile">
+            <img src="Imagens/automaster2.png" alt="">
+            <div class="icone-hanburger">
+                <span class="material-symbols-outlined" onclick="opemMenu()" id="abrirMenu">menu</span>
+            </div>
+                <nav class="opcoes" id="itens">
+                    <span class="material-symbols-outlined" onclick="fechaMenu()" id="closeMenu">close</span>
+                    <div class="bloco">
+                        <img src="Imagens/favicon.ico" alt="">
+                        <h3>AutoMaster </h3>
+                    </div>
+                    <hr>
+                    <a href="#princ-conteiner" onclick="fechaMenu()"><span class="material-symbols-outlined">home</span>Principal</a>
+                    <a href="#produtos_conteiner" onclick="fechaMenu()"><span class="material-symbols-outlined">inventory_2</span>Produtos</a>
+                    <a href="#servicos-conteiner" onclick="fechaMenu()"><span class="material-symbols-outlined">support_agent</span>Serviços</a>
+                    <a href="#tec-conteiner" onclick="fechaMenu()"><span class="material-symbols-outlined">captive_portal</span>Tecnologia</a>
+                    <a href="#parc-conteiner" onclick="fechaMenu()"><span class="material-symbols-outlined">supervisor_account</span>Parceiros</a>
+                    <a href="#"><span class="material-symbols-outlined" id="location">where_to_vote</span>Sistema de monitoramento 24H</a>
+                    <div class="dropdown">
+                        <button class="dropbtn" id="dropbtn" onclick="dropdow()">Baixe Nosso app
+                            <span class="material-symbols-outlined" id="icon-app">arrow_forward_ios</span>    
+                        </button>
+                        <div class="dropdown-content" id="btnapps">
+                          <a href="https://play.google.com/store/apps/details?id=br.com.automastersat.autoviewwebmobile"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-google-play" id="icon-store" viewBox="0 0 16 16">
+                            <path d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96 2.694-1.586Zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055l7.294-4.295ZM1 13.396V2.603L6.846 8 1 13.396ZM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27Z"/>
+                          </svg> Play Store</a>
+                          <a href="https://apps.apple.com/br/app/auto-master/id1346110981"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-apple" id="icon-store" viewBox="0 0 16 16">
+                            <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"/>
+                            <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"/>
+                          </svg> App Store</a>
+                        </div>
+                      </div>
+                    <div class="btn-group">
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" id="icon-zap" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                          </svg>Fale Conosco</a>
+                    </div>
+                    
+                </nav>
+                
+        </div>
+     
+    
+
+        <!--MODAL DOWLOAD APP-->
+        <div id="id05" class="modal-app">
+            <div class="modal-content-app animate">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id05').style.display='none'" class="close-app" title="Close Modal">&times;</span>
+                <div class="conteudo-modal-text-app">
+                  <h3><img src="Imagens/favicon.ico" alt="">Baixe Nosso App</h3>
+                  <hr>
+                  <P>Começe a usar todos os beneficios que o App da automaster tem a oferecer!</P>
+                  <div class="conteudo-modal-app">
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-google-play" viewBox="0 0 16 16">
+                        <path d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96 2.694-1.586Zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055l7.294-4.295ZM1 13.396V2.603L6.846 8 1 13.396ZM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27Z"/>
+                      </svg> Play Store</a>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
+                        <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"/>
+                        <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"/>
+                      </svg> App Store</a>
+                </div>
+                </div>
+              </div>
+              
+          </div>
+          </div>
+        <!--FIM MODAL DOWLOAD APP-->
+    
+        <main>
+    <div class="content-conteiner" id="princ-conteiner">
+            <h1 class="texto-primario">Auto Master Monitoramento</h1>    
+            <p class="texto-secundario">
+                Descubra o futuro da gestão veicular com a Auto Master! Monitoramento 24h, redução de 
+                custos e segurança para você e sua empresa. Tecnologia avançada e intuitiva ao seu alcance.
+            </p>
+                <a href="#leia-mais" class="btn"><span>Leia mais</span><i></i></a>   
+    </div>
+    <!-- LEIA MAIS-->
+    
+    <div class="leia-mais" id="leia-mais">
+       <div class="card">
+            <div class="icone">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                    <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
+                  </svg>
+            </div>
+             <div class="conteudo">
+                <h3>Quem somos?</h3>
+                <p>Somos uma empresa especializada em monitoramento de veículos, tecnologia e segurança. Utilizamos tecnologia de ponta para oferecer rastreamento 24 horas por dia,
+                proporcionando soluções logísticas e telemetria de alta qualidade aos nossos clientes. Com uma trajetória de confiança desde 2011, somos uma marca consolidada e contamos com mais de 2000 veículos rastreados em todo o Brasil.
+                Na palma da sua mão, oferecemos a solução perfeita. Nossa equipe se dedica a proporcionar resultados positivos para sua empresa, sempre priorizando a qualidade e a satisfação do cliente. Conte conosco para simplificar sua gestão,
+                impulsionar sua eficiência e garantir o sucesso do seu negócio.</p>
+            </div>
+            <a class="more"></a>
+       </div>
+       <div class="card">
+            <div class="icone">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-graph-up-arrow" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M0 0h1v15h15v1H0V0Zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5Z"/>
+                  </svg>
+            </div>
+             <div class="conteudo">
+                <h3>Missão</h3>
+                <p>Nosso objetivo é ser a referência em soluções tecnológicas, segurança e monitoramento via satélite (GPS) no mercado automotivo brasileiro. Oferecemos produtos de última geração, proporcionando controle e localização precisos de veículos e cargas com comunicação eficaz de dados. Impulsionamos o melhor desempenho logístico, resultando em redução de custos para o seu negócio. Conte conosco para agregar qualidade, segurança e eficiência à sua logística.</p>
+            </div>
+            <a class="more"></a>
+       </div>
+       <div class="card">
+            <div class="icone">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-globe-americas" viewBox="0 0 16 16">
+                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484-.08.08-.162.158-.242.234-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"/>
+                  </svg>
+            </div>
+             <div class="conteudo">
+                <h3>Visão</h3>
+                <p>Nosso objetivo é nos tornarmos uma empresa de referência nacional em monitoramento e rastreamento de veículos via satélite, mantendo sempre a qualidade que nos destaca. Oferecendo soluções confiáveis e inovadoras que atendam às necessidades de nossos clientes em todo o país.</p>
+            </div>
+            <a class="more"></a>
+       </div>
+    </div>
+
+    
+    <div class="sobre_acordeao">
+        <h3>Nossa Visão</h3>
+        <p class="p_visao">Nossa visão é ser a principal empresa de rastreamento, fornecendo soluções inovadoras e seguras que garantam o controle
+            e a proteção de veículos, proporcionando tranquilidade e confiança aos nossos clientes</p>
+        <img src="Imagens/post-01.png" alt="imagen automaster">
+        <div class="caixa">
+            <button class="accordion"><strong>Atendimento</strong></button>
+                    <div class="panel">
+                    <p>Estamos sempre empenhados em prestar o melhor aos clientes, seja na parte 
+                        comercial ou no atendimento de emergência que funciona 24 horas.</p>
+                    </div>
+                    <hr>
+                <button class="accordion"><strong>Equipamentos</strong></button>
+                <div class="panel">
+                <p>Contamos com equipamentos de última geração, cuidadosamente selecionados, para assegurar um rastreamento de 
+                    excelência. Nossa prioridade é fornecer a você um sistema confiável, 
+                    preciso e de alta qualidade, que garanta a proteção e a localização precisa dos seus veículos.</p>
+                </div>
+                    <hr>
+                <button class="accordion"><strong>Pós-Venda</strong></button>
+                <div class="panel">
+                <p>Estamos sempre ao seu lado, oferecendo total suporte e agindo proativamente em 
+                    situações de roubo. Nossa equipe assume a liderança das ocorrências, trabalhando 
+                    incansavelmente para garantir a recuperação dos seus veículos e a sua tranquilidade.
+                    Conte conosco para estar um passo à frente quando você mais precisar.</p>
+                </div>
+                <hr>
+            </div>
+        </div>  
+     
+    <!--FIM LEIA MAIS-->
+    
+    <!-- PRODUTOS-->
+    <div class="produtos_conteiner" id="produtos_conteiner">
+        <h3>Rastreador</h3>
+            <p class="desc_rastreador"><strong>O rastreador com a funcionalidade que você precisa e o preço que você procura!</strong>
+                Compacto e baixo custo, o rastreador Auto Master é uma solução que se encaixa em qualquer frota,
+                 seja ela terrestre ou marítima. Além de acelerômetro e grau de proteção contra água(IP67), possui 
+                 antenas GPS e GPRS internas, funções que tornam eficiente e extremamente funcional.</p>
+        <img class="img_mapa" src="Imagens/banner_rastreador.png" alt="">
+        <h3 class="titulo_cerca">Cerca de Estacionamento</h3>
+            <p class="desc_cerca">Introduzindo a Cerca de Estacionamento Inteligente: Proteção e Segurança para seu Veículo! Nossa cerca 
+                de estacionamento revolucionária garante a proteção do seu veículo. Com tecnologia avançada, monitoramos
+                 sua localização constantemente. Em caso de furto e o veículo saia da área delimitada, nosso sistema bloqueia
+                  o veículo e envia uma notificação para o seu aplicativo. Personalizável e fácil de usar, você controla tudo 
+                  pelo seu celular. Tenha tranquilidade e proteja seu veículo, mesmo à distância.</p>
+        <img class="img_cerca" src="Imagens/cercaEstacionamento.jpg" alt="">
+    </div>
+    <!--FIM PRODUTOS-->
+    
+
+<!--SLIDE-->
+<div class="slideshow-container" id="servicos-conteiner">
+           
+                        <!--CONTEUDO-->
+                        <div class="serv-slide-item mySlides fade">
+                            <img src="Imagens/monitoramento.png" class="img-desktop" alt="">
+                            <img src="Imagens/monitoramento mobile.png" class="img-mobile" alt="">
+                            <div class="overlay">
+                                <div class="serv-slide-item-conteudo">
+                                    <div class="item-conteudo-wraper">
+                                        <div class="item-conteudo-titulo">
+                                            Monitoramento 24Hs
+                                        </div>
+                                        <div class="item-conteudo-descricao">
+                                            A Auto Master possui uma equipe de atendimento emergencial 24hs.
+                                            Oferecemos todo suporte logístico para sua empresa focando sempre 
+                                            no melhor custo-benefício. Em caso de sinistro é só acionar a nossa
+                                            central 24H e nós cuidados de recuperar o seu veículo com toda a
+                                            segurança.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         <!-- FIM CONTEUDO-->
+                        <!--CONTEUDO-->
+                        <div class="serv-slide-item mySlides fade ">
+                            <img src="Imagens/resumo_combustivel.png"  class="img-desktop" alt="">
+                            <img src="Imagens/resumo_combustivel mobile.png"  class="img-mobile" alt="">
+                            <div class="overlay">
+                                <div class="serv-slide-item-conteudo">
+                                    <div class="item-conteudo-wraper">
+                                        <div class="item-conteudo-titulo">
+                                            Resumo de combustível
+                                        </div>
+                                        <div class="item-conteudo-descricao">
+                                            O cliente pode emitir de forma simplificada relatórios 
+                                            comportamentais de consumo de combustível dos veículos 
+                                            em determinados períodos do monitoramento.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         <!-- FIM CONTEUDO-->
+                        <!--CONTEUDO-->
+                        <div class="serv-slide-item mySlides fade ">
+                            <img src="Imagens/reatorio de percusso.png" class="img-desktop" alt="">
+                            <img src="Imagens/relatorio de percusso mobile.png" class="img-mobile" alt="">
+                            <div class="overlay">
+                                <div class="serv-slide-item-conteudo">
+                                    <div class="item-conteudo-wraper">
+                                        <div class="item-conteudo-titulo">
+                                            Relatório de Percurso
+                                        </div>
+                                        <div class="item-conteudo-descricao">
+                                            O sistema da Auto Master armazena todo o trajetório do
+                                             veículo desde quando o aparelho foi instalado até a data 
+                                             atual, podendo ser consultado a qualquer momento para gerar relatórios
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         <!-- FIM CONTEUDO-->
+                        <!--CONTEUDO-->
+                        <div class="serv-slide-item mySlides fade">
+                            <img src="Imagens/cerca_estacionamneto.png" class="img-desktop" alt="">
+                            <img src="Imagens/cerca_estacionamnento mobile.png" class="img-mobile" alt="">
+                            <div class="overlay">
+                                <div class="serv-slide-item-conteudo">
+                                    <div class="item-conteudo-wraper">
+                                        <div class="item-conteudo-titulo">
+                                            Cerca virtual
+                                        </div>
+                                        <div class="item-conteudo-descricao">
+                                            O cliente pode demarcar uma área no 
+                                            mapa onde o veículo pode trafegar livremente, caso o
+                                             veículo saia da área o mesmo será bloqueado.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         <!-- FIM CONTEUDO-->
+                        <!--CONTEUDO-->
+                        <div class="serv-slide-item mySlides fade">
+                            <img src="Imagens/resumo_cercas.png" class="img-desktop" alt="">
+                            <img src="Imagens/resumo_cercas mobile.png" class="img-mobile" alt="">
+                            <div class="overlay">
+                                <div class="serv-slide-item-conteudo">
+                                    <div class="item-conteudo-wraper">
+                                        <div class="item-conteudo-titulo">
+                                            Resumo de cercas
+                                        </div>
+                                        <div class="item-conteudo-descricao">
+                                            O cliente pode emitir de forma simplificada e obter 
+                                            de forma detalhada quanto tempo o veículo passou trafegando 
+                                            em determinado trecho de rodovía demarcada pela cerca virtual 
+                                            do sistema de monitoramento Auto Master.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         <!-- FIM CONTEUDO-->
+                        <!--CONTEUDO-->
+                        <div class="serv-slide-item mySlides fade ">
+                            <img src="Imagens/ponto_ref.png" class="img-desktop" alt="">
+                            <img src="Imagens/ponto_ref mobile.png" class="img-mobile" alt="">
+                            <div class="overlay">
+                                <div class="serv-slide-item-conteudo">
+                                    <div class="item-conteudo-wraper">
+                                        <div class="item-conteudo-titulo">
+                                            Pontos de referência
+                                        </div>
+                                        <div class="item-conteudo-descricao">
+                                            O cliente pode demarcar pontos de referência no mapa para mehor
+                                             identificar suas rotas, podendo obter relatórios precisos dos 
+                                             intinerários percorridos durante as horas trabalhadas.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         <!-- FIM CONTEUDO-->
+                        <!--CONTEUDO-->
+                        <div class="serv-slide-item mySlides fade ">
+                            <img src="Imagens/resumo_moni.png" class="img-desktop" alt="">
+                            <img src="Imagens/resumo_moni mbile.png" class="img-mobile" alt="">
+                            <div class="overlay">
+                                <div class="serv-slide-item-conteudo">
+                                    <div class="item-conteudo-wraper">
+                                        <div class="item-conteudo-titulo">
+                                            Resumo de monitoramento
+                                        </div>
+                                        <div class="item-conteudo-descricao">
+                                            O cliente pode emitir de forma simplificada relatórios comportamentais 
+                                            dos veículos, analisando os tempos de parada, horas trabalhadas, veículo 
+                                            ligado desnecessariamente, velocidade máxima e média atingidas, temperatura do motor.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         <!-- FIM CONTEUDO-->
+                    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<!--FIM SLIDE-->
+
+<!--TECNOLOGIA-->
+<div class="tec-conteiner" id="tec-conteiner">
+    <div class="L01"></div>  
+        <h3>Tecnologia.</h3>
+            <img src="Imagens/auto-tec.png " class="img-tec" alt="">
+            <img src="Imagens/auto-tec-tv.png" class="img-tec-tv" alt="">
+                <div class="tec-text">
+                    <p>Com o sistema de posicionamento global (GPS), seu veículo pode ser localizado em qualquer lugar
+                        do mundo, utilizando vários satélites em órbita ao redor do globo terrestre. Esses satélites fornecem 
+                        informações precisas de latitude e longitude sobre a localização do veículo. O rastreador e bloqueador da Auto Master processa essas 
+                        informações e as envia por meio da rede GSM/GPRS. Isso permite que você veja a localização dos seus veículos pela internet ou, quando solicitado, 
+                        pela central de monitoramento. Você tem acesso à sua frota e pode monitorar seus veículos por meio de um computador, celular ou tablet.
+                    </p>  
+                </div> 
+</div>
+<!--FIM TECNOLOGIA-->
+
+<!--PARCEIRO-->
+<div class="parc-conteiner" id="parc-conteiner">
+    <div class="L02">  </div>  
+        <h3>Parceiros</h3>
+            <img src="Imagens/parceiro.png" alt="">
+                <div class="parc-text">
+                    <p>Estabelecemos parcerias estratégicas com as principais empresas de tecnologia especializadas em segurança e monitoramento de veículos
+                         da América do Norte, Europa e Ásia. Nossas colaborações com esses renomados parceiros nos permitem oferecer soluções de ponta, 
+                         desenvolvidas com as mais avançadas tecnologias disponíveis globalmente. Trabalhamos em conjunto com os líderes do setor para garantir
+                          a excelência em segurança e monitoramento para os nossos clientes.</p>  
+                </div> 
+</div>
+<!--FIM PARCEIRO-->
+ 
+
+</main>
+<!--MODAL LOCALIZAÇÃO-->
+<div id="id01" class="modal">
+  <div class="modal-content animate">
+    <div class="imgcontainer-01">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <div class="conteudo-modal-text">
+        <h3>MATRIZ</h3>
+        <p>Av. Benjamin Constant 1406, Centro, Santa Isabel do Pará-PA.</p>
+      </div>
+    </div>
+    <div class="conteudo-modal">
+        <h2>Entre em contato! será um prazer atende-lo!</h2>
+        <p> Ou se prefefir faça-nos uma visita! Estamos te esperando.</p>
+        <a href="https://goo.gl/maps/24X3tLwLwGhoHRMH8">Como Chegar</a>
+        <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5591988483951">Fale Conosco</a>
+    </div>
+</div>
+</div>
+
+
+<div id="id02" class="modal">
+  <div class="modal-content animate">
+    <div class="imgcontainer-02">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <div class="conteudo-modal-text">
+        <h3>FILIAL ANANINDEUA</h3>
+        <p>Travessa WE 67 (Arterial 18), 482B, Cidade Nova VII, Ananindeua-PA.</p>
+      </div>
+    </div>
+    <div class="conteudo-modal">
+        <h2>Entre em contato! será um prazer atende-lo!</h2>
+        <p> Ou se prefefir faça-nos uma visita! Estamos te esperando.</p>
+        <a href="https://goo.gl/maps/5u9a7pj3WUCsWJbi8">Como Chegar</a>
+        <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5591988436914">Fale Conosco</a>
+    </div>
+</div>
+</div>
+
+
+<div id="id03" class="modal">
+  <div class="modal-content animate">
+    <div class="imgcontainer-03">
+      <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <div class="conteudo-modal-text">
+        <h3>FILIAL BENEVIDES</h3>
+        <p>Av. Joaquim Pereira de Queiróz, 1050B, Centro, Benevides-PA.</p>
+      </div>
+    </div>
+    <div class="conteudo-modal">
+        <h2>Entre em contato! será um prazer atende-lo!</h2>
+        <p> Ou se prefefir faça-nos uma visita! Estamos te esperando.</p>
+        <a href="https://goo.gl/maps/GZzNoUJgwhdaqxo67">Como Chegar</a>
+        <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5591993964401">Fale Conosco</a>
+    </div>
+</div>
+</div>
+
+
+<div id="id04" class="modal">
+  <div class="modal-content animate">
+    <div class="imgcontainer-04">
+      <span onclick="document.getElementById('id04').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <div class="conteudo-modal-text">
+        <h3>FILIAL CASTANHAL</h3>
+        <p>Av. Pres. Getúlio Vargas, 1050, Nova Olinda, Castanhal-PA.</p>
+      </div>
+    </div>
+    <div class="conteudo-modal">
+        <h2>Entre em contato! será um prazer atende-lo!</h2>
+        <p> Ou se prefefir faça-nos uma visita! Estamos te esperando.</p>
+        <a href="https://goo.gl/maps/6Qm9k9DE4RaftTEb8">Como Chegar</a>
+        <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5591987120874">Fale Conosco</a>
+    </div>
+</div>
+</div>
+<!-- FIM MODAL LOCALIZAÇÃO-->
+<footer>
+    <div class="footer-logo-final">
+        <img src="Imagens/automaster2.png" alt="">
+        <p><h3>Auto Master Monitoramento de veiculos</h3></p>
+        <p>automaster 2023</p>
+    
+    </div>
+            <div class="footer-filiais">    
+                <div class="footer-lista">
+                    <h3>MATRIZ</h3>
+                    <p>Av. Benjamin Constant 1406, Centro, Santa Isabel do Pará-PA.</p>
+                    <button  onclick="document.getElementById('id01').style.display='block'" style="width:auto;">localização</button>
+                </div>
+                <div class="footer-lista">
+                    <h3>FILIAL ANANINDEUA</h3>
+                    <p>Travessa WE 67 (Arterial 18), 482B, Cidade Nova VII, Ananindeua-PA.</p>
+                    <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">localização</button>
+                </div>
+                <div class="footer-lista">
+                    <h3>FILIAL BENEVIDES</h3>
+                    <p>Av. Joaquim Pereira de Queiróz, 1050B, Centro, Benevides-PA.</p>
+                    <button onclick="document.getElementById('id03').style.display='block'" style="width:auto;">localização</button>
+                </div>
+                <div class="footer-lista">
+                    <h3>FILIAL CASTANHAL</h3>
+                    <p>Av. Pres. Getúlio Vargas, 1050, Nova Olinda, Castanhal-PA.</p>
+                    <button onclick="document.getElementById('id04').style.display='block'" style="width:auto;">localização</button>
+                </div>
+               
+            </div>    
+        
+    <div class="footer-title">
+        <hr>
+        Master Monitoramento © 2023
+        <div class="social-midia">
+             <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+              </svg></a>   
+             <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+              </svg></a>   
+             <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+              </svg></a>   
+        </div>
+    </div>
+</footer>
+
+<script src="script/scrip.js"></script>
+<script>
+    ScrollReveal({ reset: false,
+    distance:'40px',
+    duration: 1500,
+    delay: 100});
+    
+    ScrollReveal().reveal('.card', {delay:0.5, origin:'bottom', interval:200});
+    ScrollReveal().reveal('.sobre_acordeao img,.p_visao,.sobre_acordeao h3', {delay:100, origin:'bottom'});
+    ScrollReveal().reveal('.caixa', {delay:500, origin:'bottom', distance:'20px'});
+    ScrollReveal().reveal('.accordion', {delay:500, origin:'bottom', interval:200});
+
+
+    ScrollReveal().reveal('.img_mapa', {delay:500, origin:'bottom'});
+    ScrollReveal().reveal('.desc_rastreador, .produtos_conteiner h3', {delay:600, origin:'left'});
+    ScrollReveal().reveal('.titulo_cerca, .desc_cerca', {delay:600, origin:'bottom'});
+    ScrollReveal().reveal('.img_cerca', {delay:700, origin:'bottom', interval:250});
+
+
+    ScrollReveal().reveal('.tec-conteiner, L01', {delay:200, origin:'bottom', distance:'1px'});
+    ScrollReveal().reveal('.tec-conteiner h3', {delay:300, origin:'left'});
+    ScrollReveal().reveal('.tec-text p', {delay:300, origin:'top'});
+    ScrollReveal().reveal('.tec-conteiner img', {delay:400, origin:'top'});
+    
+    ScrollReveal().reveal('.parc-conteiner h3', {delay:300, origin:'left'});
+    ScrollReveal().reveal('.parc-text p', {delay:300, origin:'top'});
+    ScrollReveal().reveal('.parc-conteiner img', {delay:400, origin:'top'});
+    
+    
+</script>
+<script></script>
+</body>
+</html>
