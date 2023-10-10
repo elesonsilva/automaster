@@ -113,7 +113,7 @@ function fechaMenu(){
 }*/
 
 function opemMenu(){
-  document.getElementById("itens").style.width = "90%";
+  document.getElementById("itens").style.width = "100%";
 }
 function fechaMenu(){
   document.getElementById("itens").style.width = "0";
