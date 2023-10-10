@@ -37,7 +37,7 @@ Tv: acimda de 1200px
         display: none;
     }  
     
-   
+    
     .menu-mobile{
         position: fixed;
         display: flex;
@@ -305,7 +305,7 @@ Tv: acimda de 1200px
         margin-top: 30px;
         margin-left: 20px;
         width: 90%;
-        margin-bottom: 100vh;
+       
     }
     
     .sobre_acordeao .caixa{
@@ -314,7 +314,7 @@ Tv: acimda de 1200px
         text-align: justify;
         justify-content: center;
         width: 90%;
-        margin-top: -350px;
+        margin-top: -260px;
         margin-bottom: 20px;
         padding: 20px 20px;
         border-radius: 20px;
@@ -334,6 +334,7 @@ Tv: acimda de 1200px
         opacity: 0.5;
 
     }
+
     .produtos_conteiner{
         height: 1500px;
     }
@@ -476,6 +477,7 @@ Tv: acimda de 1200px
        border-radius: 5px;
     }
     footer{
+        width: 100%;
         height: 100vh;
     }
     footer .footer-logo-final{
@@ -484,18 +486,32 @@ Tv: acimda de 1200px
     }
    
     footer .footer-filiais{
+        
         width: 100%;
         grid-template-columns: repeat(2 , 4fr);
         margin: auto;
         margin-top: 150px;
         padding: 5px 10px;
     }
-    
-    
-
     footer .footer-title{
-        margin-top: 100%;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        margin-left: 20px;
     }
+    footer  hr{
+       width: 90%;
+    }
+     .footer-filiais .social-midia{
+        position: absolute;
+        right: 0;
+        margin-right: 50px;
+        margin-top: -25px;
+       
+        
+    }
+    
 
     .modal-content{
         width: 80%;
