@@ -32,15 +32,19 @@ Tv: acimda de 1200px
 
 }
 
+
 @media screen and (max-width: 600px){ /*TELAS PEQUENAS*/
     *{
         padding: 0;
         margin: 0;
         box-sizing: border-box;
+       
     }
     html, body{
         width: 100%;
         height: 100%;
+        position: relative;
+        overflow-x: hidden;
     }
     .header-container{
         display: none;
@@ -86,7 +90,7 @@ Tv: acimda de 1200px
         position: absolute;
         right: 0;
         margin-top: 5px;
-        margin-right: 20px;
+        margin-right: 10px;
         
     }
     .menu-mobile span:hover{
@@ -120,7 +124,7 @@ Tv: acimda de 1200px
     }
     .menu-mobile .opcoes #closeMenu{
         position: absolute;
-        right: 15px;
+        right: 5px;
     }
     .menu-mobile .opcoes .bloco h3{
         text-align: center;
@@ -208,7 +212,7 @@ Tv: acimda de 1200px
         width: 35px;
         height: 35px;
         margin-top: -8px;
-        margin-left: 130px;
+        margin-left: 120px;
         color: var(--cor-azulBlack);
     }
     .menu-mobile .opcoes .dropdown{
@@ -235,7 +239,7 @@ Tv: acimda de 1200px
     
     .menu-mobile .opcoes .dropdown .dropbtn #icon-app{
         position: absolute;
-        margin-right: 130px;
+        margin-right: 120px;
         margin-top: -5px;
         font-size: 16px;
         transition: 0.5s;
@@ -1610,8 +1614,7 @@ Tv: acimda de 1200px
     }
 }
 @media screen and (min-width:992px) and (max-width:1200px) {/*DESKTOP*/
-    
-      
+   
 }
 
 @media screen and (min-width:1500px) {
