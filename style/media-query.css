@@ -318,6 +318,7 @@ Tv: acimda de 1200px
         font-size: 18px;
         font-weight: 700;
         margin-top: 10px;
+        z-index: 1;
     }
     .sobre_acordeao img{
         position: absolute;
@@ -326,6 +327,7 @@ Tv: acimda de 1200px
         margin-top: -50px;
     }
     .sobre_acordeao .p_visao{
+        position: relative;
         display: flex;
         margin-top: 30px;
         margin-left: 20px;
