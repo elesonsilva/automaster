@@ -58,7 +58,6 @@ Tv: acimda de 1200px
         min-width: 320px;
         min-height: 100vh;
         position: relative;
-        display: flex;
         align-items: center;
         flex-direction: column;
         
@@ -101,7 +100,6 @@ Tv: acimda de 1200px
         color: var(--cor-quarternaria);
     }
     
-   
     .menu-mobile .opcoes{
         position: fixed; 
         top: 0;
@@ -311,7 +309,7 @@ Tv: acimda de 1200px
         position: absolute;
         margin-top: 400px;
     }
-
+   
     .leia-mais{
         position: relative;
         width: 100%;
@@ -319,7 +317,7 @@ Tv: acimda de 1200px
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        background-color: white;/*#F1F2F6*/
+        background-color: white;
         
         
     }
@@ -327,9 +325,10 @@ Tv: acimda de 1200px
         position: relative;
         width: 300px;
         padding: 20px;
-        margin: 20px;
         background: #F8F9FA;
-        box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.22);   
+        box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.22);
+        z-index: 111;
+       
         
         
     }
