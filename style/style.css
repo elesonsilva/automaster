@@ -362,7 +362,7 @@ main{
     outline: none;
     flex-wrap: wrap;
     transition: 0.4s;
-    
+    overflow: hidden;
   }
   /* BACKGROUND DO ACORDEÃO */
   .active, .accordion:hover {
