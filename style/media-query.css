@@ -191,7 +191,7 @@ Tv: acimda de 1200px
     }
     .menu-mobile .opcoes .btn-group a{
         padding-right: 25px;
-        width: 40%;
+        width: 60%;
         height: 50px;
         right: 0;
         top: 0;
@@ -212,7 +212,7 @@ Tv: acimda de 1200px
         width: 35px;
         height: 35px;
         margin-top: -8px;
-        margin-left: 110px;
+        margin-left: 43%;
         color: var(--cor-azulBlack);
     }
     .menu-mobile .opcoes .dropdown{
@@ -239,7 +239,7 @@ Tv: acimda de 1200px
     
     .menu-mobile .opcoes .dropdown .dropbtn #icon-app{
         position: absolute;
-        margin-right: 95px;
+        margin-right: 23%;
         margin-top: -5px;
         font-size: 16px;
         transition: 0.5s;
@@ -286,7 +286,7 @@ Tv: acimda de 1200px
     .content-conteiner h1{
         position: absolute;
         width: 100%;
-        font-size: 40px;
+        font-size: 35px;
         text-align: center;
         top: 0;
         margin-top: 180px;
